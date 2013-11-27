@@ -4,14 +4,14 @@ html {
 
 body {
     background: linear-gradient(
-        -45deg, rgba(255, 255, 255, 0.12) 25%,
+        -45deg, rgba(255, 255, 255, .05) 25%,
         transparent 25%,
         transparent 50%,
-        rgba(255, 255, 255, 0.12) 50%,
-        rgba(255, 255, 255, 0.12) 75%,
+        rgba(255, 255, 255, .05) 50%,
+        rgba(255, 255, 255, .05) 75%,
         transparent 75%,
         transparent
-    ) 0 0 / 13px 13px black;
+    ) 0 0 / 13px 13px #111;
     font: 12px/1.5 sans-serif;
     height: 100%;
     margin: 0;
@@ -59,7 +59,7 @@ body {
 
 #infotext h1 {
     position: relative;
-    margin: 28px 16px 8px 0;
+    margin: 16px 16px 8px 0;
     padding: 5px 0;
     font-size: 1.2857em;
     font-weight: normal;
@@ -76,6 +76,14 @@ body {
     margin-left: 10px;
     vertical-align: top;
     border-bottom: 1px dotted #be540f;
+}
+
+#infotext .c {
+    background: #ddd;
+    font-family: Courier New;
+    font-weight: bold;
+    padding: 2px 3px 0;
+    text-shadow: 0 1px 0 white;
 }
 
 .gutter {

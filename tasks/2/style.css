@@ -1,0 +1,18 @@
+#square {
+    background: blue;
+    height: 200px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 200px;
+}
+
+#ball {
+    background: green;
+    border-radius: 20px;
+    height: 40px;
+    left: 140px;
+    position: absolute;
+    top: 140px;
+    width: 40px;
+}

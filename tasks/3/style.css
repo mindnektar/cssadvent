@@ -1,0 +1,23 @@
+ul {
+    float: left;
+}
+
+li {
+    color: white;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 4px;
+    text-align: center;
+    width: 100px;
+}
+
+#list1 li {
+    background-color: green;
+}
+
+#list2 li {
+    background-color: red;
+}

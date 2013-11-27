@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+$task = isset($_GET['task']) ? $_GET['task'] : 1;
+?>
 <html>
 <head>
 <meta charset="utf-8">
@@ -15,7 +18,7 @@
 <div id="canvas">
     <div class="gutter">
         <div class="label">Leinwand</div>
-        <iframe id="iframe" src="task.php"></iframe>
+        <iframe id="iframe" src="task.php?task=<?php echo $task; ?>"></iframe>
     </div>
 </div>
 
