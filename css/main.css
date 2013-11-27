@@ -1,0 +1,165 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        -45deg, rgba(255, 255, 255, 0.12) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.12) 50%,
+        rgba(255, 255, 255, 0.12) 75%,
+        transparent 75%,
+        transparent
+    ) 0 0 / 13px 13px black;
+    font: 12px/1.5 sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    height: 50%;
+    position: relative;
+    width: 100%;
+}
+
+#canvas iframe {
+    border: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#info,
+#css,
+#controls {
+    float: left;
+    height: 50%;
+    position: relative;
+    width: 45%;
+}
+
+#controls {
+    width: 10%;
+}
+
+#infotext {
+    bottom: 0;
+    margin-left: 16px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+}
+
+#infotext p {
+    color: #333;
+    margin: 0 16px 10px;
+}
+
+#infotext h1 {
+    position: relative;
+    margin: 28px 16px 8px 0;
+    padding: 5px 0;
+    font-size: 1.2857em;
+    font-weight: normal;
+    color: #be540f;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#infotext h1:after {
+    content: " ";
+    display: inline-block;
+    height: .7em;
+    width: 100%;
+    margin-left: 10px;
+    vertical-align: top;
+    border-bottom: 1px dotted #be540f;
+}
+
+.gutter {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    bottom: 0;
+    box-shadow: 0 0 14px -4px black inset;
+    left: 0;
+    margin: 16px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#controls .gutter {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#controls button {
+    background: #e3e3e3;
+    border: 1px solid #bbb;
+    border-radius: 13px;
+    box-shadow: 0 0 1px 1px #f6f6f6 inset;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    width: 100%;
+}
+
+#controls button::-moz-focus-inner {
+    border: 0;
+}
+
+#controls button:hover {
+    background: #d9d9d9;
+    box-shadow: 0 0 1px 1px #eaeaea inset;
+    color: #222;
+}
+
+#controls button:active {
+    background: #d0d0d0;
+    box-shadow: 0 0 1px 1px #e3e3e3 inset;
+    color: #000;
+    outline: none;
+}
+
+.label {
+    background: #ccc;
+    border-radius: 0 10px 0 6px;
+    box-shadow: 0 0 14px -4px black;
+    color: #eee;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 3px 10px;
+    position: absolute;
+    right: -1px;
+    text-shadow: 0 0 1.5px black;
+    top: -1px;
+    z-index: 7;
+}
+
+.gutter:hover .label {
+    display: none;
+}
+
+.CodeMirror {
+    background: none;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.CodeMirror-gutters {
+    background-color: rgba(180,180,180,.2);
+}
+
+.CodeMirror-lines {
+    line-height: 1.2;
+}
