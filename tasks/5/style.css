@@ -1,0 +1,12 @@
+.box {
+    background: orange;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.box div {
+    background: purple;
+    height: 50px;
+    width: 50px;
+}
