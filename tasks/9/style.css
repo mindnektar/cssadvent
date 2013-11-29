@@ -1,0 +1,45 @@
+div {
+    color: white;
+    font-family: sans-serif;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    text-align: right;
+    top: 150px;
+}
+
+#red {
+    background: red;
+    left: 0;
+    width: 175px;
+}
+
+#blue {
+    background: blue;
+    left: 185px;
+    width: 74px;
+}
+
+#brown {
+    background: brown;
+    left: 269px;
+    width: 199px;
+}
+
+#green {
+    background: green;
+    left: 478px;
+    width: 50px;
+}
+
+#purple {
+    background: purple;
+    left: 538px;
+    width: 138px;
+}
+
+#orange {
+    background: orange;
+    left: 686px;
+    width: 106px;
+}
