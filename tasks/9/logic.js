@@ -24,13 +24,14 @@ function check() {
         return msg;
     }
 
-    if (
-        $('#green').css('z-index') > $('#blue').css('z-index') &&
-        $('#blue').css('z-index') > $('#orange').css('z-index') &&
-        $('#orange').css('z-index') > $('#purple').css('z-index') &&
-        $('#purple').css('z-index') > $('#red').css('z-index') &&
-        $('#red').css('z-index') > $('#brown').css('z-index')
-    ) {
+    var greenZ = isNaN(parseInt($('#green').css('z-index'))) ? 0 : $('#green').css('z-index'),
+        blueZ = isNaN(parseInt($('#blue').css('z-index'))) ? 0 : $('#blue').css('z-index'),
+        orangeZ = isNaN(parseInt($('#orange').css('z-index'))) ? 0 : $('#orange').css('z-index'),
+        purpleZ = isNaN(parseInt($('#purple').css('z-index'))) ? 0 : $('#purple').css('z-index'),
+        redZ = isNaN(parseInt($('#red').css('z-index'))) ? 0 : $('#red').css('z-index'),
+        brownZ = isNaN(parseInt($('#brown').css('z-index'))) ? 0 : $('#brown').css('z-index');
+
+    if (greenZ >= blueZ && blueZ > orangeZ && orangeZ >= purpleZ && purpleZ >= redZ && redZ > brownZ) {
         return 'Jaaaa, Schokolaaade! Schokolade ist der Hammer! Mehr Schokolaaaaadeee...';
     }
 
