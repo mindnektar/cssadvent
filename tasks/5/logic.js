@@ -1,7 +1,7 @@
 var info = [
     'Treten Sie mir nicht auf den Fuß, Arschloch!',
     'Was sehen wir hier? Ein langer lilaner Kasten? Hmm, irgendwas stimmt da nicht... Wenn du es mit Firebug zu inspizieren versuchst, wirst du feststellen, dass es aus mehreren kleineren Quadraten besteht. Dass man das nicht auf den ersten Blick sieht, macht mich fertig. Das ändern wir!',
-    '<strong>Aufgabe: </strong> Schaffe einen Abstand zwischen den vier Quadraten. 10 Pixel sollten reichen! Und in den Quadraten scheint es noch weitere Elemente zu geben... Also gib den Quadraten nach innen hin ebenfalls einen Abstand von 10 Pixeln!'
+    '<strong>Aufgabe:</strong> Schaffe einen Abstand zwischen den vier Quadraten. 10 Pixel sollten reichen! Und in den Quadraten scheint es noch weitere Elemente zu geben... Also gib den Quadraten nach innen hin ebenfalls einen Abstand von 10 Pixeln!'
 ];
 
 var hints = [
@@ -15,7 +15,7 @@ function check() {
 
     $.each($('.box'), function() {
         if ($(this).css('margin-top') !== '0px' || $(this).css('margin-right') !== '10px' || $(this).css('margin-bottom') !== '0px' || $(this).css('margin-left') !== '0px') {
-            msg = 'Nur der Abstand zwischen den Boxen muss 10 Pixel betragen. Und zwar genau 10 Pixel.';
+            msg = 'Der Abstand zwischen den Boxen beträgt leider noch nicht 10 Pixel.';
             return false;
         }
     });

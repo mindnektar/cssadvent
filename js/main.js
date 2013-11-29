@@ -1,10 +1,11 @@
 $(function() {
     var codeMirror,
-        hintCount = 0,
-        $iframe, $update, $check, $hint, $infotext, $csscode;
+        $iframe, $update, $check, $hint, $infotext, $csscode, $taskno;
 
     (function init() {
-        cache();
+        var hintCount = 0;
+
+        cacheElements();
         initCssCode();
         initInfo();
 
@@ -19,9 +20,19 @@ $(function() {
 
             message(hint ? '<strong>Hinweis ' + ++hintCount + ':</strong> ' + hint : 'Ich habe leider keine weiteren Hinweise für dich. Du packst das schon!');
         });
+
+        $taskno.keypress(function(e) {
+            if (e.which === 13) {
+                window.location.href = '/cssadvent/' + this.value;
+            }
+        });
     })();
 
     function initCssCode() {
+        if (!$csscode.length) {
+            return;
+        }
+
         codeMirror = window.CodeMirror.fromTextArea($csscode[0], {
             value: '',
             mode: 'css',
@@ -52,12 +63,13 @@ $(function() {
             .scrollTop($infotext.prop('scrollHeight'));
     }
 
-    function cache() {
+    function cacheElements() {
         $iframe = $('#iframe');
         $update = $('#update');
         $check = $('#check');
         $hint = $('#hint');
         $infotext = $('#infotext');
         $csscode = $('#csscode');
+        $taskno = $('#taskno');
     }
 });

@@ -171,3 +171,18 @@ body {
 .CodeMirror-lines {
     line-height: 1.2;
 }
+
+#taskno {
+    background: white;
+    border: 4px solid #ccc;
+    border-radius: 45px;
+    box-shadow: 0 0 14px -4px black inset;
+    font-size: 60px;
+    height: 80px;
+    left: 50%;
+    margin: -42px 0 0 -122px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 240px;
+}

@@ -1,7 +1,7 @@
 var info = [
     'Viele viele bunte Hintergründe',
     'Heute sehen wir uns mit zwei Listen bestehend aus nummerierten farbigen Boxen konfrontiert. Du bist sicher auch der Meinung, dass die Herrschaften noch nicht farbig genug sind. Da geht noch was.',
-    '<strong>Aufgabe: </strong> Alle roten Boxen sollen gelb werden. Oh, und alle Boxen mit ungeraden Zahlen machen wir orange!'
+    '<strong>Aufgabe:</strong> Alle roten Boxen sollen gelb werden. Oh, und alle Boxen mit ungeraden Zahlen machen wir orange!'
 ];
 
 var hints = [

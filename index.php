@@ -1,7 +1,34 @@
-<!DOCTYPE html>
 <?php
-$task = isset($_GET['task']) ? $_GET['task'] : 1;
+$list = array(
+    'c4c' => 1,
+    'c81' => 2,
+    'ecc' => 3,
+    'a87' => 4,
+    'e4d' => 5,
+    '167' => 6,
+    '8f1' => 7,
+    'c9f' => 8,
+    '45c' => 9,
+    'd3d' => 10,
+    '651' => 11,
+    'c20' => 12,
+    'c51' => 13,
+    'aab' => 14,
+    '9bf' => 15,
+    'c74' => 16,
+    '70e' => 17,
+    '6f4' => 18,
+    '1f0' => 19,
+    '98f' => 20,
+    '3c5' => 21,
+    'b6d' => 22,
+    '376' => 23,
+    '1ff' => 24
+);
+$task = isset($_GET['task']) ? $_GET['task'] : '';
+$taskNo = isset($list[$task]) ? $list[$task] : '';
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -15,10 +42,13 @@ $task = isset($_GET['task']) ? $_GET['task'] : 1;
 </head>
 
 <body>
+<?php
+if ($taskNo) {
+?>
 <div id="canvas">
     <div class="gutter">
         <div class="label">Leinwand</div>
-        <iframe id="iframe" src="task.php?task=<?php echo $task; ?>"></iframe>
+        <iframe id="iframe" src="task.php?task=<?php echo $taskNo; ?>"></iframe>
     </div>
 </div>
 
@@ -42,5 +72,12 @@ $task = isset($_GET['task']) ? $_GET['task'] : 1;
         <textarea id="csscode"></textarea>
     </div>
 </div>
+<?php
+} else {
+?>
+<input type="text" id="taskno" maxlength="3" />
+<?php
+}
+?>
 </body>
 </html>

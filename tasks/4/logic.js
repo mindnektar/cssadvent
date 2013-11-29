@@ -1,7 +1,7 @@
 var info = [
     'Nur schweben ist schöner',
     'Na sieh einer an, unser blaues Quadrat ist zurück! Hey, warte... ich glaube, es spricht zu uns. Was will es? Es möchte, dass der Text unter ihm um es herum fließt? Na, den Wunsch kriegen wir doch bestimmt erfüllt.',
-    '<strong>Aufgabe: </strong> Lass den Text um das blaue Quadrat herumfließen. Oh, und siehst du die vier Boxen weiter rechts? Sorge dafür, dass sie nebeneinander dargestellt werden!'
+    '<strong>Aufgabe:</strong> Lass den Text um das blaue Quadrat herumfließen. Oh, und siehst du die vier Boxen weiter rechts? Sorge dafür, dass sie nebeneinander dargestellt werden!'
 ];
 
 var hints = [

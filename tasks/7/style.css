@@ -1,0 +1,14 @@
+#blue {
+    background: blue;
+    height: 100px;
+    width: 100px;
+}
+
+#red {
+    background: red;
+    height: 40px;
+    left: 320px;
+    position: absolute;
+    top: 150px;
+    width: 100px;
+}

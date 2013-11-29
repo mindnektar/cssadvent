@@ -1,0 +1,21 @@
+#container div {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
