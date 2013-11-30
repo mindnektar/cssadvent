@@ -19,7 +19,7 @@ function check() {console.log($('body').css('background-image'));
         if (!passed) {
             return 'Das süße Herzchen zieht sich noch nicht über die komplette Leinwand.';
         } else {
-            $('body').html('<div id="container"><p>BÄM! Damit hättest du jetzt nicht gerechnet, oder? Was man nicht alles anstellen kann... :)</p><p>Ich wünsche uns beiden alles nur erdenkliche Liebe und Gute zu unserem zweiten Jahrestag und hoffe auf noch ganz, ganz viele weitere! Ein Leben ohne dich ist schon längst unvorstellbar geworden - ich genieße jeden einzelnen Tag mit dir, auch wenn\'s mal nicht so rund läuft. Ich danke dir für die Liebe, die du mir schenkst!</p><p>Zur Feier des Tages möchte ich dich gerne ins Copper House in der Davidstraße einladen. Um 20 Uhr geht\'s los! :D</p><p>Ich liebe dich sehr!</p><p>Dein Marzinpan</p></div>');
+            $('body').html('<div id="container"><p>BÄM! Damit hättest du jetzt nicht gerechnet, oder? Was man nicht alles anstellen kann... :)</p><p>Ich wünsche uns beiden alles nur erdenkliche Liebe und Gute zu unserem zweiten Jahrestag und hoffe auf noch ganz, ganz viele weitere! Ein Leben ohne dich ist schon längst unvorstellbar geworden - ich genieße jeden einzelnen Tag mit dir, auch wenn\'s mal nicht so rund läuft. Ich danke dir für die Liebe, die du mir schenkst!</p><p>Zur Feier des Tages möchte ich dich gerne ins Copper House in der Davidstraße einladen, damit unsere Gaumen gebührend verwöhnt werden können. Um 20 Uhr geht\'s los! :D</p><p>Ich liebe dich sehr!</p><p>Dein Marzinpan</p></div>');
         }
     }
 

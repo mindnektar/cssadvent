@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
+header('Content-Type: text/html; charset=UTF-8');
 $task = isset($_GET['task']) ? $_GET['task'] : 1;
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
