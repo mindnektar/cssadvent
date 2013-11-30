@@ -12,7 +12,11 @@ $(function() {
         $check.click(function() {
             $iframe.contents().find('#owncss').text(codeMirror.getDoc().getValue());
 
-            message($iframe[0].contentWindow.check());
+            var text = $iframe[0].contentWindow.check();
+
+            if (text) {
+                message(text);
+            }
         });
 
         $hint.click(function() {
