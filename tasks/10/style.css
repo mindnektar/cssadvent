@@ -1,0 +1,13 @@
+#container {
+    margin: 50px auto;
+    padding-left: 20px;
+    width: 300px;
+}
+
+#container div {
+    background: #999;
+    float: left;
+    height: 50px;
+    margin-right: 20px;
+    width: 50px;
+}
