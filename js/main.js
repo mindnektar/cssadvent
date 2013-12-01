@@ -1,6 +1,5 @@
 $(function() {
-    var codeMirror,
-        $iframe, $update, $check, $hint, $infotext, $csscode, $taskno;
+    var $iframe, $update, $check, $hint, $infotext, $csscode, $taskno;
 
     (function init() {
         var hintCount = 0;
