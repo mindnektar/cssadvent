@@ -26,7 +26,7 @@ $(function() {
 
         $taskno.keypress(function(e) {
             if (e.which === 13) {
-                window.location.href = '/cssadvent/' + this.value;
+                window.location.href = this.value;
             }
         });
     })();
